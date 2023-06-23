@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .logo {
   animation: logo-spin infinite 20s linear;
   height: 40vmin;
@@ -37,12 +33,8 @@
   display: flex;
 }
 
-.tmToolbox {
-  display: flex;
-  flex-direction: column;
-}
-
 .tmCanvasRenderer {
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 80%;
+  font-family: sans-serif;
 }
