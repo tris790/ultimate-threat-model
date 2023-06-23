@@ -16,7 +16,14 @@ function App() {
   return (
     <div class={styles.App}>
       <button onClick={addNodes}>Add nodes</button>
-      <div id="threat-model-container" class={styles.tmcontainer}></div>
+      <div class={styles.tmUIContainer}>
+        <div id="threat-model-container" class={styles.tmCanvasRenderer}></div>
+        <div class={styles.tmToolbox}>
+          <button>Add Node</button>
+          <button>Add Link</button>
+          <button>Add Node</button>
+        </div>
+      </div>
       <header class={styles.header}>
         <img src={logo} class={styles.logo} alt="logo" />
         <p>

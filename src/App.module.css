@@ -33,7 +33,16 @@
   }
 }
 
-.tmcontainer {
+.tmUIContainer {
+  display: flex;
+}
+
+.tmToolbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.tmCanvasRenderer {
   height: 500px;
   width: 500px;
 }
