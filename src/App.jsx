@@ -93,12 +93,12 @@ export default function App() {
 
 	const addNode = (threatModelElement, x, y) => {
 		const key = graph.addNode(threatModelElement.name, { x: x, y: y, size: 20, label: threatModelElement.name, color: typeStyles[threatModelElement.name] });
-		elements.push({ key, element: threatModelElement });
+		elements.push({ key, data: threatModelElement });
 	};
 
 	const addEdge = (threatModelElement, nodes) => {
 		const key = graph.addEdge(nodes[0].key, nodes[1].key, { size: 10 });
-		elements.push({ key, element: threatModelElement });
+		elements.push({ key, data: threatModelElement });
 	};
 
 	const startNodeSelection = (e) => {
@@ -110,7 +110,7 @@ export default function App() {
 		<div>
 			<div class={styles.tmUIContainer}>
 				<div id="threat-model-container" class={styles.tmCanvasRenderer}></div>
-				<ThreatModelToolbox selectedElement={selectedElement()} addNode={addNode} addEdge={startNodeSelection} />
+				<ThreatModelToolbox selectedElement={selectedElement} addNode={addNode} addEdge={startNodeSelection} />
 			</div>
 		</div >
 	);
