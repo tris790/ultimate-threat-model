@@ -7,6 +7,8 @@ import Sigma from "sigma";
 
 const selectedHightlightColor = "#03ad91";
 const typeStyles = {
+	"user": "#679bbf",
+	"browser": "#9467bf",
 	"database": "#00FF00",
 	"process": "#0000FF",
 	"server": "#FFFF00"
@@ -83,7 +85,7 @@ export default function App() {
 	});
 
 	const init = (e) => {
-		const element1 = { name: "user", properties: [{ "first_name": "Bob" }] };
+		const element1 = { name: "user", properties: [{ "first_name": "Uncle Bobbley" }] };
 		const element2 = { name: "browser", properties: [{ which: "chrome" }, { version: "108.00" }] };
 		const edge = { name: "web request", properties: [{ protocol: "https" }] };
 
